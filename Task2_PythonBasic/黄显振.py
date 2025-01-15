@@ -1,4 +1,3 @@
-import math
 def average(data,count):
     sum=0
     for element in data:
@@ -10,7 +9,7 @@ def variance(data, count, average):
     for element in data:
         element=int(element)
         sum+=(element-average)**2
-    return math.sqrt(sum/count)
+    return sum/count
 
 in_file=open("data.txt", "r", encoding="UTF-8")
 
